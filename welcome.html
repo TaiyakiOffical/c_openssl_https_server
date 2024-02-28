@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Security File Transfer System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        h2 {
+            margin: 0 0 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            text-align: left;
+        }
+        
+
+        .btn-container {
+            margin-top: 30px;       
+            display: flex;         
+            justify-content: center;
+        }
+    
+        .btn {
+            display: inline-block;   
+            width: 100px;         
+            height: 30px;         
+            margin: 0 10px;          
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to SecTransFileSys!</h2>
+        <form id="login-form" method="post" action="https://8.134.153.217:8090/prelogin">
+        <div class="btn-container">
+        	<button class="btn" type="submit">Login</button>
+        </div>
+        </form>
+        <form id="register-form" method="post" action="https://8.134.153.217:8090/preregist">
+        <div class="btn-container">
+        	<button class="btn" type="submit">Register</button>
+        </div> 
+        </form>
+    </div>
+</body>
+</html>
